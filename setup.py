@@ -1,11 +1,21 @@
 import setuptools
+import json
 
+# Collect the version information from the version file. This project is autobumped.
 with open("readme.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
+with open("version", "r") as vh:
+    version_file = json.load(vh)
+    version = "{}.{}.{}".format(
+        version_file["major"],
+        version_file["minor"],
+        version_file["micro"]
+    )
+
 setuptools.setup(
     name="LnkAnalyser",
-    version="0.1",
+    version=version,
     author="Andrew Weir",
     author_email="andrew@ajweir.co.uk",
     description="A Python package for analysing Windows shortcut files",

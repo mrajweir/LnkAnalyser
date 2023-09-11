@@ -1,8 +1,9 @@
 # LnkAnalyser
 A Python module for the forensic analysis of Windows shortcuts (they're surprisingly useful.) This package is parses
-shortcuts against the [Windows MS-SHLLINK standard](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-shllink/16cb4ca1-9339-4d0c-a68d-bf1d6cc0f943]).
+shortcuts against the [Windows MS-SHLLINK standard](https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-shllink/16cb4ca1-9339-4d0c-a68d-bf1d6cc0f943).
 
 ## Usage
+    TODO: Rewrite and add proper documentation
 
 ```
 from LnkAnalyser import lnkanalyser

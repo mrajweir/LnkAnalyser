@@ -1,0 +1,18 @@
+[project]
+name = "LnkAnalyser"
+version = "0.0.1"
+authors = [
+  { name="Andrew Weir", email="andrew@ajweir.co.uk" },
+]
+description = "Python module for forensic analysis of Windows shortcut (LNK files)."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/mrajweir/LnkAnalyser"
+Issues = "https://github.com/mrajweir/LnkAnalyser/issues"
+Author = "https://www.ajweir.co.uk"

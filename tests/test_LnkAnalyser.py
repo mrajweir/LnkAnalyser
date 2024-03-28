@@ -1,4 +1,5 @@
 import unittest
+import os
 from LnkAnalyser import lnkanalyser
 
 class TestLnkAnalyser(unittest.TestCase):
@@ -7,4 +8,7 @@ class TestLnkAnalyser(unittest.TestCase):
         self.assertEqual('foo'.upper(), 'FOO')
 
     def test_shortcut(self):
-        shortcut = lnkanalyser.go("Desktop.lnk")
+        print()
+        shortcut = lnkanalyser.go(
+            "{0}\Desktop.lnk".format(os.path.dirname(os.path.realpath(__file__)))
+        )

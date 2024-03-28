@@ -8,7 +8,8 @@ class TestLnkAnalyser(unittest.TestCase):
         self.assertEqual('foo'.upper(), 'FOO')
 
     def test_shortcut(self):
-        print()
+        # Intentionally breaking the unit test
+        self.assertEqual(True, False)
         shortcut = lnkanalyser.go(
             "{0}/Desktop.lnk".format(os.path.dirname(os.path.realpath(__file__)))
         )

@@ -10,5 +10,5 @@ class TestLnkAnalyser(unittest.TestCase):
     def test_shortcut(self):
         print()
         shortcut = lnkanalyser.go(
-            "{0}\Desktop.lnk".format(os.path.dirname(os.path.realpath(__file__)))
+            "{0}/Desktop.lnk".format(os.path.dirname(os.path.realpath(__file__)))
         )
